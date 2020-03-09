@@ -1,0 +1,9 @@
+<?php
+session_start();
+unset($_SESSION['login']);
+unset($_SESSION['name']);
+unset($_SESSION['newName']);
+unset($_SESSION['newPassword']);
+unset($_SESSION['newUsername']);
+session_destroy();
+header("location:SignIn.php");
